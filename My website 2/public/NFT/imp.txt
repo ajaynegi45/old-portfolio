@@ -1,0 +1,5 @@
+
+New Tab in a tag :- 
+target="_blank" rel="noopener noreferrer"
+
+
