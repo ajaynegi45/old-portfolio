@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /styles.css
+Disallow: /main.js
+Disallow: /Guest Area
+Disallow: /styles.scss
+Disallow: /assets
+
+
+User-agent: *
+Allow: /index.html
