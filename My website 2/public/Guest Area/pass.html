@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="pass.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <!-- Form -->
+    <form>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <!-- Passowrd -->
+    <div class="user-box">
+    
+    <input type="password" id="psw" name="psw" pattern="(?=.*\d).{4,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="">
+    <label for="psw">Password</label>
+    </div>
+
+
+
+
+    <div id="message">
+      <p id="number" class="invalid"><b>Password</b></p>
+      <!-- <p id="length" class="invalid">Minimum <b>8 characters</b></p> -->
+    </div>
+    <!-- Input -->
+
+        <a href="" type="submit" value="Submit">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+
+  </form>
+</div>
+
+
+<script>
+var myInput = document.getElementById("psw");
+var number = document.getElementById("number");
+
+
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  
+
+  // Validate numbers
+  var numbers = 89208920;
+  if(myInput.value.match(numbers) && myInput.value.length == 8) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+    window.location.href = "https://drive.google.com/drive/folders/1uoH40_qsJ73yL3Nim6tRA9OAOc-eFDkb?usp=sharing";
+    } 
+  else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+   
+  }
+}
+</script>
+
+</body>
+</html>
